@@ -1,0 +1,90 @@
+/* Eclipse Classic Java palette, shared by the editor and teaching examples. */
+.cm-s-eclipse-java {
+  --java-keyword: #7f0055;
+  --java-string: #2a00ff;
+  --java-comment: #3f7f5f;
+  --java-constant: #0000c0;
+  color: #000;
+  background: #fff;
+}
+.cm-s-eclipse-java .cm-keyword,
+.cm-s-eclipse-java .cm-atom { color: var(--java-keyword); font-weight: 700; }
+.cm-s-eclipse-java .cm-string,
+.cm-s-eclipse-java .cm-string-2 { color: var(--java-string); }
+.cm-s-eclipse-java .cm-comment { color: var(--java-comment); }
+.cm-s-eclipse-java .cm-number,
+.cm-s-eclipse-java .cm-def,
+.cm-s-eclipse-java .cm-type,
+.cm-s-eclipse-java .cm-variable,
+.cm-s-eclipse-java .cm-variable-3,
+.cm-s-eclipse-java .cm-property,
+.cm-s-eclipse-java .cm-operator { color: #000; }
+.cm-s-eclipse-java .cm-variable-2 { color: #6a3e3e; }
+.cm-s-eclipse-java .cm-meta { color: #646464; }
+.cm-s-eclipse-java .cm-static,
+.cm-s-eclipse-java .cm-constant { color: var(--java-constant); font-style: italic; }
+.cm-s-eclipse-java .cm-error { color: #000; background: none; }
+
+.workspace { background: #fff; border-color: #cbd2dc; color: #20252b; }
+.editor-toolbar { background: #f3f5f9; border-bottom-color: #dce2eb; }
+.filename { color: #222; }
+.editor-theme-label { color: #66717c; }
+.editor-tools button { background: #fff; color: #39434e; border-color: #cbd3dd; }
+.editor-tools button:hover { background: #e6effa; border-color: #9baec6; }
+.editor-wrap.has-syntax { display: block; background: #fff; }
+.has-syntax > .line-numbers { display: none; }
+.editor-wrap .CodeMirror {
+  width: 100%; height: 100%; min-width: 0;
+  direction: ltr; text-align: left;
+  font: 14px/1.7 Consolas, "Liberation Mono", Menlo, monospace;
+  background: #fff; color: #000;
+}
+.editor-wrap .CodeMirror-lines { padding: 12px 0; }
+.editor-wrap .CodeMirror pre.CodeMirror-line,
+.editor-wrap .CodeMirror pre.CodeMirror-line-like {
+  padding: 0 12px; margin: 0; border: 0; border-radius: 0;
+  background: transparent; color: inherit; font: inherit;
+  overflow: visible; white-space: pre; direction: ltr; text-align: left;
+}
+.editor-wrap .CodeMirror-gutters { background: #fafafa; border-right: 1px solid #e5e5e5; }
+.editor-wrap .CodeMirror-linenumber { color: #737373; padding: 0 8px 0 12px; }
+.editor-wrap .CodeMirror-cursor { border-left: 1px solid #000; }
+.editor-wrap .CodeMirror-selected { background: #d5e4f5; }
+.editor-wrap .CodeMirror-focused .CodeMirror-selected { background: #b5d5ff; }
+.editor-wrap .CodeMirror-activeline-background,
+.editor-wrap .CodeMirror-activeline-gutter { background: #e8f2fe; }
+.editor-wrap .CodeMirror-focused { box-shadow: inset 0 0 0 2px #6c8cae; }
+.editor-wrap .CodeMirror-code { font-variant-ligatures: none; }
+.editor-wrap .CodeMirror-scroll { overscroll-behavior: contain; }
+.editor-wrap .CodeMirror [contenteditable] { outline: none; }
+.code-editor { background: #fff; color: #000; }
+.line-numbers { background: #fafafa; color: #737373; }
+
+.workspace .input-row { border-color: #dce2eb; background: #f8f9fb; color: #3e4852; }
+.workspace .input-row summary { color: #4c5c6b; }
+.workspace .input-row textarea { background: #fff; border-color: #c9d2de; color: #222; }
+.workspace .runbar { background: #f3f5f9; border-color: #dce2eb; }
+.workspace .runtime-status { color: #506170; }
+.workspace .runbar label { color: #506170 !important; }
+.workspace .kbd { border-color: #b6c3d1; color: #506170; background: #fff; }
+.workspace .console-wrap { background: #fff; border-color: #dce2eb; }
+.workspace .console-label { color: #5a6b7a; }
+.workspace .console { color: #000; }
+.workspace .console.error { color: #a31515; }
+.workspace #file-results p { color: #506170 !important; }
+
+pre.language-java {
+  padding: 16px; background: #fff; color: #000;
+  border: 1px solid #dce2eb; border-radius: 8px;
+  font: 13px/1.8 Consolas, "Liberation Mono", Menlo, monospace;
+  direction: ltr; text-align: left; tab-size: 4;
+}
+pre.language-java code { background: transparent; color: inherit; font: inherit; }
+.solution pre.language-java { background: #fff; }
+.exam-spec pre.language-java { font-size: 12px; }
+@media (max-width: 570px) {
+  .editor-wrap .CodeMirror { font-size: 13px; }
+  .editor-wrap .CodeMirror pre.CodeMirror-line,
+  .editor-wrap .CodeMirror pre.CodeMirror-line-like { padding-left: 8px; padding-right: 8px; }
+  .editor-wrap .CodeMirror-linenumber { padding-left: 8px; padding-right: 8px; }
+}

@@ -1,0 +1,22 @@
+{
+  "package": "codemirror",
+  "version": "5.65.21",
+  "license": "MIT",
+  "registry": "https://registry.npmjs.org/codemirror/5.65.21",
+  "sourceRepository": {
+    "url": "git+https://github.com/codemirror/CodeMirror.git",
+    "type": "git"
+  },
+  "tarball": "https://registry.npmjs.org/codemirror/-/codemirror-5.65.21.tgz",
+  "integrity": "sha512-6teYk0bA0nR3QP0ihGMoxuKzpl5W80FpnHpBJpgy66NK3cZv5b/d/HY8PnRvfSsCG1MTfr92u2WUl+wT0E40mQ==",
+  "verified": "SHA-512 tarball digest verified against npm registry metadata",
+  "files": {
+    "lib/codemirror.js": "codemirror.js",
+    "lib/codemirror.css": "codemirror.css",
+    "mode/clike/clike.js": "clike.js",
+    "addon/runmode/runmode.js": "runmode.js",
+    "addon/selection/active-line.js": "active-line.js",
+    "LICENSE": "LICENSE.txt"
+  },
+  "retrievedAt": "2026-11-11"
+}
