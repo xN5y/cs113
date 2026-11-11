@@ -230,3 +230,53 @@ h1, h2, h3, p, button, span { letter-spacing: normal; }
 @media print {
   .save-warning, #focus-study, .attempt-actions { display: none; }
 }
+
+/* Class specifications stay readable at the width of the question panel. */
+.brand { min-height: 44px; }
+.uml-diagram {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  gap: 16px;
+  align-items: start;
+  margin: 24px 0;
+  direction: ltr;
+  text-align: left;
+}
+.uml-diagram .uml-card {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #a7b7ab;
+  border-radius: 8px;
+  background: #fff;
+}
+.uml-card h3 {
+  margin: 0;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  font: 600 15px/1.6 var(--mono);
+  overflow-wrap: anywhere;
+}
+.uml-card .uml-members {
+  margin: 0;
+  padding: 16px;
+  border: 0;
+  border-radius: 0 0 8px 8px;
+  background: #fff;
+  color: var(--ink);
+  font: 14px/1.9 var(--mono);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow: visible;
+}
+.lesson-article { overflow-wrap: anywhere; }
+.lesson-article :not(pre) > code { overflow-wrap: anywhere; }
+.cheatsheet > *, .glossary-grid > *, .uml-builder > * { min-width: 0; }
+.uml-class { overflow-wrap: anywhere; }
+.virtual-file-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+.virtual-file-row input { flex: 1 1 180px; min-width: 0; width: auto; }
+.virtual-file-row button { flex: 0 0 auto; }
+@media (max-width: 1150px) {
+  .exam-spec { max-height: none; overflow: visible; }
+}
